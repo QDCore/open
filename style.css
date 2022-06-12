@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: rgb(223, 241, 236);
+  width: 400px;
+  height: 600px;
+  border: 5px solid #abcea1;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+ gap: 4px;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(171, 206, 161, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+    
+}
+.to-member{
+      background: transparent !important;
+}
+
+td{
+      background-color: rgb(244, 248, 250);
+      padding-right: 10px;
+      text-align: left;
+}
+
+td {
+  border: 3px solid #abcea1;
+  background-color: #e2eede;
+  border-radius: 6px;
+  padding: 5px;
+  gap: 4px;
+}
+
+#edit-box{
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }

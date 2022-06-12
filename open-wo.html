@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>쇼핑몰 회원관리</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="app">
+        <h1>쇼핑몰 회원관리</h1>
+        <p>[ 회원을 추가해주세요 ]</p>
+    
+<div class="addNew ">
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+    <input type="text" id="add-member" placeholder="회원 이름을 적어주세요.">
+    <input type="submit" value="Add" class="btn btn-outline-primary">
+    </form>
+    <form action="javascript:void(0);" method="POST" onsubmit="app.search()">
+    <input type="text" id="search-member" placeholder="회원 이름을 검색하세요.">
+    <input type="submit" value="search" class="btn btn-outline-info">
+    </form>
+    
+    <p>총 추가된 인원: </p>
+    <p id="counter"></p>
+
+    <table>
+    <tr class="to-member">
+        <th><h3>[ 회원 목록 ]</h3></th>
+    </tr>
+        <tbody id="name">
+        </tbody>
+    </table>
+    </div>
+<div id="edit-box" role="aria-hidden">
+    <form action="javascript:void(0);" method="POST" id="save-edit">
+      <input type="text" id="edit-member">
+      <input type="submit" value="Save" class="btn btn-outline-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
